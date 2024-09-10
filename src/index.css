@@ -3,68 +3,72 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Gilroy";
-  font-weight: 100; /* Thin */
-  src: url("./assets/fonts/Gilroy-Thin.ttf") format("truetype");
+    font-family: "Gilroy";
+    font-weight: 100; /* Thin */
+    src: url("./assets/fonts/Gilroy-Thin.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Gilroy";
-  font-weight: 200; /* UltraLight */
-  src: url("./assets/fonts/Gilroy-UltraLight.ttf") format("truetype");
+    font-family: "Gilroy";
+    font-weight: 200; /* UltraLight */
+    src: url("./assets/fonts/Gilroy-UltraLight.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Gilroy";
-  font-weight: 300; /* Light */
-  src: url("./assets/fonts/Gilroy-Light.ttf") format("truetype");
+    font-family: "Gilroy";
+    font-weight: 300; /* Light */
+    src: url("./assets/fonts/Gilroy-Light.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Gilroy";
-  font-weight: 400; /* Regular */
-  src: url("./assets/fonts/Gilroy-Regular.ttf") format("truetype");
+    font-family: "Gilroy";
+    font-weight: 400; /* Regular */
+    src: url("./assets/fonts/Gilroy-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Gilroy";
-  font-weight: 500; /* Medium */
-  src: url("./assets/fonts/Gilroy-Medium.ttf") format("truetype");
+    font-family: "Gilroy";
+    font-weight: 500; /* Medium */
+    src: url("./assets/fonts/Gilroy-Medium.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Gilroy";
-  font-weight: 600; /* SemiBold */
-  src: url("./assets/fonts/Gilroy-SemiBold.ttf") format("truetype");
+    font-family: "Gilroy";
+    font-weight: 600; /* SemiBold */
+    src: url("./assets/fonts/Gilroy-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Gilroy";
-  font-weight: 700; /* Bold */
-  src: url("./assets/fonts/Gilroy-Bold.ttf") format("truetype");
+    font-family: "Gilroy";
+    font-weight: 700; /* Bold */
+    src: url("./assets/fonts/Gilroy-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Gilroy";
-  font-weight: 800; /* ExtraBold */
-  src: url("./assets/fonts/Gilroy-ExtraBold.ttf") format("truetype");
+    font-family: "Gilroy";
+    font-weight: 800; /* ExtraBold */
+    src: url("./assets/fonts/Gilroy-ExtraBold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Gilroy";
-  font-weight: 900; /* Heavy */
-  src: url("./assets/fonts/Gilroy-Heavy.ttf") format("truetype");
+    font-family: "Gilroy";
+    font-weight: 900; /* Heavy */
+    src: url("./assets/fonts/Gilroy-Heavy.ttf") format("truetype");
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body {
-  body {
-    font-family: "Inter", "Gilroy", sans-serif;
-    font-weight: 400;
-    color: #fff;
-  }
+    body {
+        font-family: "Inter", "Gilroy", sans-serif;
+        font-weight: 400;
+        color: #fff;
+    }
+}
+
+.card-stats-shadow {
+    box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.1);
 }
