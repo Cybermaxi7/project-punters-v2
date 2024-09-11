@@ -8,7 +8,6 @@ import Header from "../shared/Header";
 export default function LandingPage() {
     return (
         <div className=" font-inter text-[14px]">
-            <Header />
             <Hero />
             <PredictionsForYou />
             <BestBet />

@@ -66,3 +66,19 @@ export const scotlandTeam = [
     { Player: "Declan Rice", Goals: "15", YellowCards: "15" },
     { Player: "Harry Kane", Goals: "04", YellowCards: "04" },
 ];
+export const topLeagues = [
+    "England",
+    "Spain",
+    "Italy",
+    "Germany",
+    "France",
+    "Netherlands",
+    "Portugal",
+    "International Club",
+];
+export const popularLeagues = [
+    "Argentina",
+    "Australia",
+    "Austria",
+    "Azerbaijan",
+];

@@ -1,3 +1,3 @@
 export default function PredictionsForYou() {
-    return <div>PredictionsForYou</div>;
+    return <div>Predictions for you</div>;
 }
