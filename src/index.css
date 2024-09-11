@@ -3,74 +3,161 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Gilroy";
-    font-weight: 100; /* Thin */
-    src: url("./assets/fonts/Gilroy-Thin.ttf") format("truetype");
+  font-family: "Gilroy";
+  font-weight: 100; /* Thin */
+  src: url("./assets/fonts/Gilroy-Thin.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Gilroy";
-    font-weight: 200; /* UltraLight */
-    src: url("./assets/fonts/Gilroy-UltraLight.ttf") format("truetype");
+  font-family: "Gilroy";
+  font-weight: 200; /* UltraLight */
+  src: url("./assets/fonts/Gilroy-UltraLight.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Gilroy";
-    font-weight: 300; /* Light */
-    src: url("./assets/fonts/Gilroy-Light.ttf") format("truetype");
+  font-family: "Gilroy";
+  font-weight: 300; /* Light */
+  src: url("./assets/fonts/Gilroy-Light.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Gilroy";
-    font-weight: 400; /* Regular */
-    src: url("./assets/fonts/Gilroy-Regular.ttf") format("truetype");
+  font-family: "Gilroy";
+  font-weight: 400; /* Regular */
+  src: url("./assets/fonts/Gilroy-Regular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Gilroy";
-    font-weight: 500; /* Medium */
-    src: url("./assets/fonts/Gilroy-Medium.ttf") format("truetype");
+  font-family: "Gilroy";
+  font-weight: 500; /* Medium */
+  src: url("./assets/fonts/Gilroy-Medium.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Gilroy";
-    font-weight: 600; /* SemiBold */
-    src: url("./assets/fonts/Gilroy-SemiBold.ttf") format("truetype");
+  font-family: "Gilroy";
+  font-weight: 600; /* SemiBold */
+  src: url("./assets/fonts/Gilroy-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Gilroy";
-    font-weight: 700; /* Bold */
-    src: url("./assets/fonts/Gilroy-Bold.ttf") format("truetype");
+  font-family: "Gilroy";
+  font-weight: 700; /* Bold */
+  src: url("./assets/fonts/Gilroy-Bold.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Gilroy";
-    font-weight: 800; /* ExtraBold */
-    src: url("./assets/fonts/Gilroy-ExtraBold.ttf") format("truetype");
+  font-family: "Gilroy";
+  font-weight: 800; /* ExtraBold */
+  src: url("./assets/fonts/Gilroy-ExtraBold.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Gilroy";
-    font-weight: 900; /* Heavy */
-    src: url("./assets/fonts/Gilroy-Heavy.ttf") format("truetype");
+  font-family: "Gilroy";
+  font-weight: 900; /* Heavy */
+  src: url("./assets/fonts/Gilroy-Heavy.ttf") format("truetype");
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    body {
-        font-family: "Inter", "Gilroy", sans-serif;
-        font-weight: 400;
-        color: #fff;
-    }
+  body {
+    font-family: "Inter", "Gilroy", sans-serif;
+    font-weight: 400;
+    color: #fff;
+  }
 }
 
 .card-stats-shadow {
-    box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Set the datepicker width to be responsive */
+.react-datepicker {
+  width: 100%;
+  max-width: 400px; /* Set a maximum width */
+  margin: 0 auto; /* Center it horizontally */
+}
+
+/* Ensure the header background is white */
+.react-datepicker__header {
+  background-color: white;
+  border-bottom: none;
+  padding: 0.5rem;
+  text-align: center; /* Center the header content */
+}
+
+/* Style the selected day */
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: #1d994a;
+  color: white;
+  border-radius: 50%;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 1rem;
+  margin: auto;
+  line-height: 1;
+}
+
+/* Style the day on hover */
+.react-datepicker__day:hover {
+  background-color: #bbf7d0; /* Tailwind green-200 */
+  border-radius: 50%;
+}
+
+/* Style for day names and day items */
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name {
+  width: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  display: inline-block; /* Ensures inline alignment */
+  margin: 0; /* Remove margin for cleaner alignment */
+}
+
+/* Flexbox for the day names to make it responsive */
+.react-datepicker__day-names {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.5rem;
+  padding: 0 0.5rem;
+}
+
+/* Flexbox for the day container to be responsive */
+.react-datepicker__week {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 0.5rem;
+}
+
+/* Override default float for month container */
+.react-datepicker__month-container {
+  float: none !important; /* Remove float left */
+}
+
+/* Make sure the datepicker is responsive */
+@media (max-width: 768px) {
+  .react-datepicker {
+    max-width: 90%; /* Reduce width on smaller screens */
+  }
+  .react-datepicker__day--selected,
+  .react-datepicker__day--keyboard-selected {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.875rem;
+  }
 }
 .button-shadow {
     box-shadow: 0 -1px 4px 0 #0909091a;
