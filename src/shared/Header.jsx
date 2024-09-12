@@ -1,9 +1,8 @@
-import React from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 
 const Navbar = () => {
   return (
-    <nav className="navbar bg-white shadow-md">
+    <nav className="navbar bg-white shadow-md py-4">
       {/* Logo */}
       <div className="navbar-start">
         <a className="text-xl font-bold flex items-center" href="/">
@@ -20,7 +19,7 @@ const Navbar = () => {
               Today's Prediction
               <IoMdArrowDropdown />
             </a>
-            <ul className="p-2 ">
+            <ul className="p-2 hidden">
               {/* <li>
                 <a href="/today">Option 1</a>
               </li>
@@ -39,7 +38,7 @@ const Navbar = () => {
               All Predictions
               <IoMdArrowDropdown />
             </a>
-            <ul className="p-2 ">
+            <ul className="p-2 hidden">
               {/* <li>
                 <a href="/predictions">Option 1</a>
               </li>
@@ -100,4 +99,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar;
