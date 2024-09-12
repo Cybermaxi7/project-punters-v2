@@ -3,12 +3,10 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-// Initial state for the reducer
 const initialState = {
   selectedDate: new Date(),
 };
 
-// Reducer function to manage state transitions
 const reducer = (state, action) => {
   switch (action.type) {
     case "SET_DATE":
@@ -24,12 +22,10 @@ const Calendar = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const { selectedDate } = state;
 
-  // Side effect to log the selected date whenever it changes
   useEffect(() => {
     console.log(`Selected date changed: ${selectedDate}`);
   }, [selectedDate]);
 
-  // Handler functions for date changes and resets
   const handleDateChange = (date) => {
     dispatch({ type: "SET_DATE", payload: date });
   };
@@ -39,14 +35,14 @@ const Calendar = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen p-4">
-      <div className="bg-[#ffffff] p-4 rounded-lg shadow-lg w-full max-w-md lg:w-1/3">
+    <div className="p-4">
+      <div className="bg-none p-4 rounded-lg shadow-lg w-full max-w-md mx-auto">
         <DatePicker
           selected={selectedDate}
           onChange={handleDateChange}
           inline
-          className="w-full "
-          calendarClassName=" bg-white p-2 sm:p-4 rounded-lg shadow-lg"
+          className="w-full"
+          calendarClassName="bg-none rounded-lg shadow-lg p-2"
           dayClassName={(date) =>
             date.getDate() === selectedDate.getDate() &&
             date.getMonth() === selectedDate.getMonth() &&
@@ -62,16 +58,15 @@ const Calendar = () => {
             nextMonthButtonDisabled,
           }) => (
             <>
-              {/* Header with Month and Year */}
-              <div className="flex flex-warp justify-between items-center mb-2">
+              <div className="flex justify-between items-center mb-2">
                 <button
                   onClick={decreaseMonth}
                   disabled={prevMonthButtonDisabled}
-                  className="btn btn-sm btn-ghost"
+                  className="p-1 rounded hover:bg-gray-200"
                 >
                   <IoIosArrowBack />
                 </button>
-                <span className="text-lg font-semibold text-center flex-grow">
+                <span className="text-lg font-semibold">
                   {date.toLocaleString("default", {
                     month: "long",
                     year: "numeric",
@@ -80,14 +75,13 @@ const Calendar = () => {
                 <button
                   onClick={increaseMonth}
                   disabled={nextMonthButtonDisabled}
-                  className="btn btn-sm btn-ghost"
+                  className="p-1 rounded hover:bg-gray-200"
                 >
                   <IoIosArrowForward />
                 </button>
               </div>
 
-              {/* Date Input and Today Button */}
-              <div className="flex flex-col sm:flex-row items-center justify-center mb-4 gap-2 w-full">
+              <div className="flex flex-col sm:flex-row items-center justify-center mb-4 gap-2">
                 <input
                   type="text"
                   value={selectedDate.toLocaleDateString("en-US", {
@@ -96,11 +90,11 @@ const Calendar = () => {
                     year: "numeric",
                   })}
                   readOnly
-                  className="border border-gray-300 rounded p-2 w-full sm:w-auto h-10 bg-transparent text-center"
+                  className="border border-gray-300 rounded p-2 text-center w-full sm:w-auto"
                 />
                 <button
                   onClick={handleResetDate}
-                  className="btn btn-outline w-full h-10 rounded-[8px] py-[10px] px-[16px] sm:w-auto"
+                  className="btn btn-outline rounded py-2 px-4"
                 >
                   Today
                 </button>
@@ -108,9 +102,9 @@ const Calendar = () => {
             </>
           )}
         />
-        <div className="flex flex-col sm:flex-row  justify-between mt-4 gap-2">
-          <button className="btn btn-outline w-full sm:w-1/2">Cancel</button>
-          <button className="btn bg-[#1D994A] w-full sm:w-1/2 text-white border-none hover:bg-[#1D994A]">
+        <div className="flex flex-col sm:flex-row justify-between mt-4 gap-2">
+          <button className="btn btn-outline w-full sm:w-auto">Cancel</button>
+          <button className="btn bg-[#1D994A] w-full sm:w-auto text-white hover:bg-[#1D994A]">
             Clear
           </button>
         </div>

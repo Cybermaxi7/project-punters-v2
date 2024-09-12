@@ -9,6 +9,10 @@ export default {
         gilroy: ["Gilroy", "sans-serif"],
         inter: ["Inter", "sans-serif"],
       },
+      animation: {
+        "spin-slow": "spin 4s linear infinite", // Slow spinning animation
+        "bounce-slow": "bounce 3s infinite", // Slow bouncing animation
+      },
     },
   },
   plugins: [daisyui],
