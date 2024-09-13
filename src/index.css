@@ -62,11 +62,8 @@
   box-sizing: border-box;
 }
 body {
-  body {
-    font-family: "Inter", "Gilroy", sans-serif;
-    font-weight: 400;
-    color: #fff;
-  }
+  font-family: "Inter", "Gilroy", sans-serif;
+  font-weight: 400;
 }
 
 .card-stats-shadow {
@@ -160,5 +157,11 @@ body {
   }
 }
 .button-shadow {
-    box-shadow: 0 -1px 4px 0 #0909091a;
+  box-shadow: 0 -1px 4px 0 #0909091a;
+}
+
+.active-tab {
+  color: #fff;
+  font-weight: 500;
+  background-color: #1d994a;
 }
