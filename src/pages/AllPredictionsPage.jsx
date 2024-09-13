@@ -6,6 +6,8 @@ export default function AllPredictionsPage() {
     <div className=" font-inter text-[14px]">
       <HeroPredictions />
       <AllPredictions />
+      <Blog />
+      <NewsLetter />
     </div>
   );
 }

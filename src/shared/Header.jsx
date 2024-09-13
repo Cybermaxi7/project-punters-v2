@@ -1,4 +1,5 @@
 import { IoMdArrowDropdown } from "react-icons/io";
+import Button from "../components/Button";
 
 const Navbar = () => {
   return (
@@ -88,12 +89,13 @@ const Navbar = () => {
 
       {/* Browse Predictions Button */}
       <div className="navbar-end hidden lg:flex">
-        <a
+        {/* <a
           href="/browse"
           className="btn bg-[#1D994A] text-[#f9f9f9] outline-none border-none"
         >
           Browse Predictions
-        </a>
+        </a> */}
+        <Button value={"Browse Predictions"} />
       </div>
     </nav>
   );
