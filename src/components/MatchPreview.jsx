@@ -23,14 +23,13 @@ const MatchPreview = ({ images, sections }) => {
 
       {/* Sections */}
       {sections.map((section, index) => (
-        <div key={index} className="mb-6">
-          <h4 className="text-green-600 flex items-left font-semibold mb-2 uppercase">
+        <div key={index} className="px-6 py-5 border border-[#DBE1E7]">
+          <h4 className="text-green-600 font-semibold mb-2 uppercase">
             {section.title}
           </h4>
-          <div className="h-[106px] border-1 ">
-            <p className="text-[#2B2B2B] flex items-start justify-start ">
-              {section.content}
-            </p>
+
+          <div>
+            <p className="text-[#2B2B2B]">{section.content}</p>
           </div>
         </div>
       ))}
