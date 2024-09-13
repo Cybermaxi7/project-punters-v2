@@ -3,7 +3,7 @@ import Odds from "./Odds";
 
 export default function ClubFriendliesRow() {
   return (
-    <div className="px-6 py-8">
+    <div className="px-6 py-8 w-full">
       <div>
         <div className="flex justify-between gap-10 items-center md:overflow-visible overflow-x-auto">
           <div className="flex items-center gap-4 ">
