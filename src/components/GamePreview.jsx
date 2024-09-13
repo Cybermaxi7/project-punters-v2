@@ -1,3 +1,9 @@
+import Preview from "./Preview";
+
 export default function GamePreview() {
-  return <div>GamePreview</div>;
+  return (
+    <div>
+      <Preview />
+    </div>
+  );
 }
