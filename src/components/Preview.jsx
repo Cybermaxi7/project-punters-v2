@@ -2,7 +2,7 @@ import React from "react";
 import MatchPreview from "./MatchPreview";
 
 const Preview = () => {
-  const images = ["./assets/img/left.png", "src/assets/img/right.png"];
+  const images = ["/src/assets/Img/left.png", "/src/assets/Img/right.png"];
 
   const sections = [
     {

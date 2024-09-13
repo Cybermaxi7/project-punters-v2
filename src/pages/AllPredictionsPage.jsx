@@ -1,7 +1,5 @@
 import AllPredictions from "../components/AllPredictions";
-import Blog from "../components/Blog";
 import HeroPredictions from "../components/HeroPredictions";
-import NewsLetter from "../components/NewsLetter";
 
 export default function AllPredictionsPage() {
   return (
