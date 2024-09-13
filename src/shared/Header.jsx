@@ -2,7 +2,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 
 const Navbar = () => {
   return (
-    <nav className="navbar bg-white shadow-md py-4">
+    <nav className="navbar bg-white shadow-md py-4 w-full max-w-[1440px] mx-auto ">
       {/* Logo */}
       <div className="navbar-start">
         <a className="text-xl font-bold flex items-center" href="/">

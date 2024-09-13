@@ -35,7 +35,7 @@ export default function AllPredictions() {
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-16">
+      <div className="grid grid-cols-1 md:grid-cols-[300px_3fr] w-full gap-4 overflow-auto">
         <FootballLeagues />
         <ClubFriendlies />
       </div>
