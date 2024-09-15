@@ -5,6 +5,7 @@ import AllPredictionsPage from "./pages/AllPredictionsPage";
 
 import GamePage from "./pages/GamePage";
 import { HelmetProvider } from "react-helmet-async";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
     return (
@@ -20,6 +21,8 @@ function App() {
                     />
                     {/* Game-related routes */}
                     <Route path="/game/*" element={<GamePage />} />
+                    {/* Not Found route */}
+                    <Route path="*" element={<NotFoundPage />} />
                 </Routes>
             </Router>
         </HelmetProvider>
