@@ -1,4 +1,5 @@
-import { topLeagues } from "../utils/stats";
+import { matchesData } from "../utils/matchesData";
+import { countries } from "../utils/stats";
 import ClubFriendliesRow from "./ClubFriendliesRow";
 
 export default function ClubFriendlies() {
@@ -14,9 +15,7 @@ export default function ClubFriendlies() {
             </div>
 
             <div className="flex flex-col gap-2 w-full">
-                {topLeagues.map((league, index) => (
-                    <ClubFriendliesRow key={index} />
-                ))}
+                <ClubFriendliesRow />
             </div>
         </div>
     );

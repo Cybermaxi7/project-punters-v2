@@ -1,5 +1,7 @@
 import AllPredictions from "../components/AllPredictions";
 import HeroPredictions from "../components/HeroPredictions";
+import Blog from "../components/Blog.jsx";
+import Newsletter from "../components/NewsLetter.jsx";
 
 export default function AllPredictionsPage() {
   return (
@@ -7,7 +9,7 @@ export default function AllPredictionsPage() {
       <HeroPredictions />
       <AllPredictions />
       <Blog />
-      <NewsLetter />
+      <Newsletter />
     </div>
   );
 }
