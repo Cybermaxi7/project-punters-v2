@@ -1,18 +1,42 @@
 import { IoMdArrowDropdown } from "react-icons/io";
-import Button from "../components/Button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import Logo from "../components/Logo";
+import { useEffect } from "react";
 
 const Navbar = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+        if (
+            location.hash === "#best-bets" ||
+            location.hash === "#predictions-for-you"
+        ) {
+            const bestBetsSection = document.getElementById("best-bets");
+            if (bestBetsSection) {
+                bestBetsSection.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+        if (location.hash === "#predictions-for-you") {
+            const bestBetsSection = document.getElementById(
+                "predictions-for-you"
+            );
+            if (bestBetsSection) {
+                bestBetsSection.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    }, [location]);
+
     return (
         <nav className="navbar bg-white shadow-md py-4 w-full max-w-[1440px] mx-auto ">
             {/* Logo */}
             <div className="navbar-start">
                 <a className="text-xl font-bold flex items-center" href="/">
-                    <img
+                    {/* <img
                         src="/src/assets/logo.svg"
                         alt="Logo"
                         className="h-10"
-                    />{" "}
+                    />{" "} */}
+                    <Logo />
                 </a>
             </div>
 
@@ -21,10 +45,10 @@ const Navbar = () => {
                 <ul className="menu menu-horizontal px-1 text-[#121212]">
                     {/* Dropdown 1 */}
                     <li tabIndex={0}>
-                        <a>
+                        <Link to="/#predictions-for-you">
                             Today's Prediction
                             <IoMdArrowDropdown />
-                        </a>
+                        </Link>
                         <ul className="p-2 hidden">
                             {/* <li>
                 <a href="/today">Option 1</a>
@@ -35,15 +59,15 @@ const Navbar = () => {
                         </ul>
                     </li>
                     <li>
-                        <a href="/best-bets">Best Bets</a>
+                        <Link to="/#best-bets">Best Bets</Link>
                     </li>
 
                     {/* Dropdown 2 */}
                     <li tabIndex={1}>
-                        <a>
+                        <Link to="all-predictions">
                             All Predictions
                             <IoMdArrowDropdown />
-                        </a>
+                        </Link>
                         <ul className="p-2 hidden">
                             {/* <li>
                 <a href="/predictions">Option 1</a>
@@ -62,7 +86,7 @@ const Navbar = () => {
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
+                            className="h-8 w-8"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -80,13 +104,15 @@ const Navbar = () => {
                         className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
                     >
                         <li>
-                            <a href="/today">Today's Prediction</a>
+                            <Link to="/#predictions-for-you">
+                                Today's Prediction
+                            </Link>
                         </li>
                         <li>
-                            <a href="/best-bets">Best Bets</a>
+                            <Link to="/#best-bets">Best Bets</Link>
                         </li>
                         <li>
-                            <a href="/predictions">All Predictions</a>
+                            <Link to="/all-predictions">All Predictions</Link>
                         </li>
                     </ul>
                 </div>

@@ -3,10 +3,10 @@ import Odds from "./Odds";
 
 export default function ClubFriendliesRow() {
     return (
-        <div className="px-6 py-8 w-full">
+        <div className="px-2 md:px-6 py-8 w-full">
             {matchesData.map((match, matchIndex) => (
                 <div key={matchIndex} className="mb-8 md:mb-12 lg:mb-16">
-                    <div className="flex justify-between gap-10 items-center md:overflow-visible overflow-x-auto">
+                    <div className="flex flex-col md:flex-row justify-between gap-10 items-center md:overflow-visible overflow-x-auto">
                         <div className="flex items-center gap-4">
                             <div className="flex gap-4 items-center">
                                 <div className="color-[#2B2B2B] flex items-center gap-2 text-[14px]">
@@ -32,7 +32,7 @@ export default function ClubFriendliesRow() {
                                 {match.time}
                             </p>
                         </div>
-                        <div className="flex items-center gap-2">
+                        <div className="flex items-center gap-2 self-end">
                             <p className="bg-[#F7F8F9] rounded-full px-4 py-2 text-[12px] border border-[#DBE1E7] button-shadow font-medium min-w-24">
                                 ft: {match.prediction.ft}
                             </p>

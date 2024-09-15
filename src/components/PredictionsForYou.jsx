@@ -5,7 +5,10 @@ import Calendar from "./Calendar";
 
 const PredictionSection = () => {
     return (
-        <div className="w-full max-w-[1440px] mx-auto  p-4 md:p-8 lg:p-12">
+        <section
+            id="predictions-for-you"
+            className="w-full max-w-[1440px] mx-auto  p-4 md:p-8 lg:p-12"
+        >
             {/* Header and Filters */}
             <div className="flex flex-col md:flex-row items-center justify-between mb-4">
                 <h1 className="whitespace-nowrap text-[32px] font-gilory font-bold mb-4 md:mb-0">
@@ -26,7 +29,7 @@ const PredictionSection = () => {
                     <Calendar />
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
