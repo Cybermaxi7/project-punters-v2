@@ -9,12 +9,36 @@ import MatchOutcome from "../components/MatchOutcome";
 import { PiEyesBold, PiPersonSimpleRunBold } from "react-icons/pi";
 import { BsBarChartLineFill } from "react-icons/bs";
 import OddsTab from "../components/OddsTab";
+import { Helmet } from "react-helmet-async";
 
 function GamePage() {
     const location = useLocation();
 
+    let pageTitle;
+    switch (location.pathname) {
+        case "/game/preview":
+            pageTitle = "Game Preview - Naija Punters";
+            break;
+        case "/game/match-stats":
+            pageTitle = "Match Stats - Naija Punters";
+            break;
+        case "/game/team-stats":
+            pageTitle = "Team Stats - Naija Punters";
+            break;
+        case "/game/player-stats":
+            pageTitle = "Player Stats - Naija Punters";
+            break;
+        case "/game/odds":
+            pageTitle = "Odds Stats - Naija Punters";
+            break;
+        default:
+            pageTitle = "Game Page";
+    }
     return (
         <div className="w-full max-w-[1440px] mx-auto px-5 md:px-10 py-6 md:py-12 flex flex-col gap-4">
+            <Helmet>
+                <title>{pageTitle}</title>
+            </Helmet>
             <div className="grid grid-cols-1 md:grid-cols-3 mb-6">
                 <div>
                     <div className="flex gap-2 items-center">
