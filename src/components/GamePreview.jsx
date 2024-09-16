@@ -3,7 +3,7 @@ import Preview from "./Preview";
 
 export default function GamePreview() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-[2.5fr_1fr] gap-6">
+    <div className="grid grid-cols-1 lg:grid-cols-[2.5fr_1fr] gap-6 mt-8">
       <Preview />
       <LineUp />
     </div>

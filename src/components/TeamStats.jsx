@@ -12,8 +12,8 @@ import LineUp from "./LineUp";
 
 export default function TeamStats() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-[2.5fr_1fr] gap-6   ">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5 mt-5">
+    <div className="grid grid-cols-1 lg:grid-cols-[2.5fr_1fr] gap-6 mt-8  ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5 ">
         <CardStats heading="Home Card Statistics">
           {homeStats.map((data, index) => (
             <CardStatsRow key={index} text={data.text} value={data.value} />
