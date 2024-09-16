@@ -29,7 +29,7 @@ const Preview = () => {
 
   return (
     <div>
-      <div className="p-4 rounded-[8px]">
+      <div className="rounded-[8px]">
         <MatchPreview images={images} sections={sections} />
       </div>
     </div>

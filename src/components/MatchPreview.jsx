@@ -2,7 +2,7 @@ import React from "react";
 
 const MatchPreview = ({ images, sections }) => {
   return (
-    <div className="bg-white rounded-[8px] shadow-md border border-[#DBE1E7] mt-7 ">
+    <div className="bg-white rounded-[8px] shadow-md border border-[#DBE1E7]  ">
       <div className="flex items-center p-5 bg-[#F7F8F9] h-[70px] w-full">
         <h3 className="text-lg items-start flex font-semibold text-[#2B2B2B] mb-5">
           Preview

@@ -5,8 +5,8 @@ import LineUp from "./LineUp";
 
 export default function PlayerStats() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-[2.5fr_1fr] gap-6   ">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5 mt-5">
+    <div className="grid grid-cols-1 lg:grid-cols-[2.5fr_1fr] gap-6 mt-8  ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5 ">
         <CardStats
           heading="Germany Starting XI"
           subHeading={true}
