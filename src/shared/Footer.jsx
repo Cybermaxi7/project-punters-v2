@@ -11,7 +11,7 @@ export default function Footer() {
             <div className="p-12 w-full max-w-[1440px] mx-auto ">
                 <div className="LOGO flex justify-between flex-col md:flex-row ">
                     {/* <h1 className="leading-[37.2px] font-Geist">LOGO</h1> */}
-                    <img src="/src/assets/logo.svg" alt="" />
+                    <img src="/static/logo.svg" alt="" />
                     <div className="SOCIALICONS flex gap-4 font-inter">
                         <a href="#">Today's Bet</a>
                         <a href="#">Best Bet</a>
