@@ -96,3 +96,212 @@ export const popularLeagues = [
     "Austria",
     "Azerbaijan",
 ];
+
+export const headToHeadData = [
+    {
+        score: "4 - 0",
+        date: "24 July, 2024",
+        flags: {
+            homeFlag: "https://flagcdn.com/de.svg",
+            opponentFlag: "https://flagcdn.com/gb-sct.svg",
+        },
+    },
+    {
+        score: "2 - 1",
+        date: "12 June, 2023",
+        flags: {
+            homeFlag: "https://flagcdn.com/de.svg",
+            opponentFlag: "https://flagcdn.com/gb-sct.svg",
+        },
+    },
+    {
+        score: "3 - 2",
+        date: "18 August, 2022",
+        flags: {
+            homeFlag: "https://flagcdn.com/de.svg",
+            opponentFlag: "https://flagcdn.com/gb-sct.svg",
+        },
+    },
+];
+
+export const germanyLastFiveMatches = [
+    {
+        score: "4 - 0",
+        date: "24 July, 2024",
+        opponent: "France",
+        flags: {
+            homeFlag: "https://flagcdn.com/de.svg",
+            opponentFlag: "https://flagcdn.com/fr.svg",
+        },
+    },
+    {
+        score: "2 - 1",
+        date: "12 June, 2023",
+        opponent: "Spain",
+        flags: {
+            homeFlag: "https://flagcdn.com/de.svg",
+            opponentFlag: "https://flagcdn.com/es.svg",
+        },
+    },
+    {
+        score: "3 - 2",
+        date: "18 August, 2022",
+        opponent: "Netherlands",
+        flags: {
+            homeFlag: "https://flagcdn.com/de.svg",
+            opponentFlag: "https://flagcdn.com/nl.svg",
+        },
+    },
+    {
+        score: "1 - 0",
+        date: "5 May, 2022",
+        opponent: "Italy",
+        flags: {
+            homeFlag: "https://flagcdn.com/de.svg",
+            opponentFlag: "https://flagcdn.com/it.svg",
+        },
+    },
+    {
+        score: "0 - 1",
+        date: "10 April, 2022",
+        opponent: "Portugal",
+        flags: {
+            homeFlag: "https://flagcdn.com/de.svg",
+            opponentFlag: "https://flagcdn.com/pt.svg",
+        },
+    },
+];
+
+export const scotlandLastFiveMatches = [
+    {
+        score: "1 - 1",
+        date: "25 August, 2024",
+        opponent: "Wales",
+        flags: {
+            homeFlag: "https://flagcdn.com/gb-sct.svg",
+            opponentFlag: "https://flagcdn.com/gb-wls.svg",
+        },
+    },
+    {
+        score: "0 - 3",
+        date: "14 June, 2023",
+        opponent: "England",
+        flags: {
+            homeFlag: "https://flagcdn.com/gb-sct.svg",
+            opponentFlag: "https://flagcdn.com/gb-eng.svg",
+        },
+    },
+    {
+        score: "2 - 2",
+        date: "22 April, 2023",
+        opponent: "Ireland",
+        flags: {
+            homeFlag: "https://flagcdn.com/gb-sct.svg",
+            opponentFlag: "https://flagcdn.com/ie.svg",
+        },
+    },
+    {
+        score: "1 - 0",
+        date: "5 November, 2022",
+        opponent: "Portugal",
+        flags: {
+            homeFlag: "https://flagcdn.com/gb-sct.svg",
+            opponentFlag: "https://flagcdn.com/pt.svg",
+        },
+    },
+    {
+        score: "1 - 2",
+        date: "18 January, 2022",
+        opponent: "Spain",
+        flags: {
+            homeFlag: "https://flagcdn.com/gb-sct.svg",
+            opponentFlag: "https://flagcdn.com/es.svg",
+        },
+    },
+];
+
+export const germanyNextFiveMatches = [
+    {
+        date: "10 October, 2024",
+        opponent: "Sweden",
+        flags: {
+            homeFlag: "https://flagcdn.com/de.svg",
+            opponentFlag: "https://flagcdn.com/se.svg",
+        },
+    },
+    {
+        date: "15 November, 2024",
+        opponent: "Norway",
+        flags: {
+            homeFlag: "https://flagcdn.com/de.svg",
+            opponentFlag: "https://flagcdn.com/no.svg",
+        },
+    },
+    {
+        date: "20 December, 2024",
+        opponent: "Switzerland",
+        flags: {
+            homeFlag: "https://flagcdn.com/de.svg",
+            opponentFlag: "https://flagcdn.com/ch.svg",
+        },
+    },
+    {
+        date: "25 January, 2025",
+        opponent: "Austria",
+        flags: {
+            homeFlag: "https://flagcdn.com/de.svg",
+            opponentFlag: "https://flagcdn.com/at.svg",
+        },
+    },
+    {
+        date: "5 February, 2025",
+        opponent: "Czech Republic",
+        flags: {
+            homeFlag: "https://flagcdn.com/de.svg",
+            opponentFlag: "https://flagcdn.com/cz.svg",
+        },
+    },
+];
+
+export const scotlandNextFiveMatches = [
+    {
+        date: "9 October, 2024",
+        opponent: "Hungary",
+        flags: {
+            homeFlag: "https://flagcdn.com/gb-sct.svg",
+            opponentFlag: "https://flagcdn.com/hu.svg",
+        },
+    },
+    {
+        date: "16 November, 2024",
+        opponent: "Croatia",
+        flags: {
+            homeFlag: "https://flagcdn.com/gb-sct.svg",
+            opponentFlag: "https://flagcdn.com/hr.svg",
+        },
+    },
+    {
+        date: "21 December, 2024",
+        opponent: "Slovakia",
+        flags: {
+            homeFlag: "https://flagcdn.com/gb-sct.svg",
+            opponentFlag: "https://flagcdn.com/sk.svg",
+        },
+    },
+    {
+        date: "30 January, 2025",
+        opponent: "Romania",
+        flags: {
+            homeFlag: "https://flagcdn.com/gb-sct.svg",
+            opponentFlag: "https://flagcdn.com/ro.svg",
+        },
+    },
+    {
+        date: "8 February, 2025",
+        opponent: "Bulgaria",
+        flags: {
+            homeFlag: "https://flagcdn.com/gb-sct.svg",
+            opponentFlag: "https://flagcdn.com/bg.svg",
+        },
+    },
+];
