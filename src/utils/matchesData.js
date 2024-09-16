@@ -2,7 +2,7 @@ export const matchesData = [
     {
         home: {
             name: "Germany",
-            flag: "/src/assets/Img/flag-of-germany-circular-stage.jpg",
+            flag: "https://flagcdn.com/de.svg",
         },
         away: { name: "Scotland", flag: "https://flagcdn.com/gb-sct.svg" },
         time: "20:00 PM",

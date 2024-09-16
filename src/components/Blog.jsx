@@ -3,17 +3,17 @@ import Card from "./Card";
 export default function Blog() {
     const blogPosts = [
         {
-            imageSrc: "/src/assets/Img/cardComponent.png",
+            imageSrc: "/static/Img/cardComponent.png",
             title: "Intro Text Goes Here",
             description: "Dorem ipsum dolor sit amet, consectetur",
         },
         {
-            imageSrc: "/src/assets/Img/cardComponent.png",
+            imageSrc: "/static/Img/cardComponent.png",
             title: "Intro Text Goes Here",
             description: "Dorem ipsum dolor sit amet, consectetur",
         },
         {
-            imageSrc: "/src/assets/Img/cardComponent.png",
+            imageSrc: "/static/Img/cardComponent.png",
             title: "Intro Text Goes Here",
             description: "Dorem ipsum dolor sit amet, consectetur",
         },

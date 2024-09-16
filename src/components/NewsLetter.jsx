@@ -20,9 +20,9 @@ const Newsletter = () => {
                     <input
                         type="text"
                         placeholder="Email Address"
-                        className="input input-bordered flex-1 rounded w-full bg-[#111111] border-[#303030] text-[14px] px-3 py-4"
+                        className="input input-bordered flex-1 rounded w-full bg-[#111111] border-[#303030] text-[14px] px-3 py-4 "
                     />
-                    <Button value={"Subscribe"} className="w-full" />
+                    <Button value={"Subscribe"} className="w-full md:w-fit" />
                 </div>
             </div>
         </div>
