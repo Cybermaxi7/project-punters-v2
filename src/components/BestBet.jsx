@@ -23,7 +23,7 @@ export default function BestBet() {
                 </div>
 
                 {/* Calendar */}
-                <div className="w-full md:w-1/3"></div>
+                {/* <div className="w-full md:w-1/3"></div> */}
             </div>
         </section>
     );

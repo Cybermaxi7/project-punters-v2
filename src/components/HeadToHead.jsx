@@ -7,7 +7,10 @@ export default function HeadToHead({
 }) {
     console.log(match);
     return (
-        <div className="w-full p-4 md:p-6 border-b border-[#DBE1E7] overflow-x-auto">
+        <div
+            className="w-full p-4 md:p-6 border-b border-[#DBE1E7] overflow-x-auto"
+            data-aos="fade-up"
+        >
             <div className="min-w-[370px]">
                 <div className="flex w-full justify-between items-center">
                     {/* Heading 1 and Heading 2 */}

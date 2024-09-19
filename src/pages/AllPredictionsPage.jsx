@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet-async";
 
 export default function AllPredictionsPage() {
     return (
-        <div className=" font-inter text-[14px]">
+        <div className=" font-inter text-[14px] overflow-x-hidden">
             <Helmet>
                 <title>All Predictions - Naija Punters</title>
             </Helmet>

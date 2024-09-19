@@ -8,7 +8,7 @@ import Footer from "../shared/Footer";
 
 export default function LandingPage() {
     return (
-        <div className=" font-inter text-[14px]">
+        <div className=" font-inter text-[14px] overflow-x-hidden">
             <Helmet>
                 <title>Naija Punters - Football Predictions</title>
                 <meta

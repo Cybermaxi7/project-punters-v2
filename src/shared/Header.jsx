@@ -30,14 +30,14 @@ const Navbar = () => {
         <nav className="navbar bg-white shadow-md py-4 w-full max-w-[1440px] mx-auto ">
             {/* Logo */}
             <div className="navbar-start">
-                <a className="text-xl font-bold flex items-center" href="/">
+                <Link className="text-xl font-bold flex items-center" to="/">
                     {/* <img
                         src="/src/assets/logo.svg"
                         alt="Logo"
                         className="h-10"
                     />{" "} */}
                     <Logo />
-                </a>
+                </Link>
             </div>
 
             {/* Centered Nav Menu */}

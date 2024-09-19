@@ -36,6 +36,7 @@ const MatchOutcome = () => {
                 <Team
                     flag={match.home.flag}
                     name={match.home.name}
+                    direction="left"
                     recentForm={["W", "W", "W", "D", "D"]}
                 />
 
@@ -59,6 +60,7 @@ const MatchOutcome = () => {
                 <Team
                     flag={match.away.flag}
                     name={match.away.name}
+                    direction="right"
                     recentForm={["L", "L", "L", "D", "D"]}
                 />
             </div>
@@ -78,9 +80,12 @@ const OutcomeNumber = ({ number }) => (
     </div>
 );
 
-const Team = ({ flag, name, recentForm }) => {
+const Team = ({ flag, name, recentForm, direction }) => {
     return (
-        <div className="flex flex-col items-center">
+        <div
+            className="flex flex-col items-center "
+            data-aos={`slide-${direction}`}
+        >
             <div className="flex items-center">
                 <img
                     src={flag}

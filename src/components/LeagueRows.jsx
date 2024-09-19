@@ -2,7 +2,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 export default function LeagueRows({ country, imgUrl }) {
     return (
-        <div className="flex justify-between px-5 py-2">
+        <div data-aos="slide-right" className="flex justify-between px-5 py-2">
             <div className="flex items-center gap-2">
                 <img
                     src={imgUrl}
