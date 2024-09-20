@@ -43,45 +43,46 @@ const Navbar = () => {
             {/* Centered Nav Menu */}
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 text-[#121212]">
-                    {/* Dropdown 1 */}
                     <li tabIndex={0}>
-                        <Link to="/#predictions-for-you">
+                        <Link
+                            to="/#predictions-for-you"
+                            className="hover:text-[#1D994A] hover:bg-[#1D994A]/10 duration-300 ease-in-out transition-colors"
+                        >
                             Today's Prediction
                             <IoMdArrowDropdown />
                         </Link>
-                        <ul className="p-2 hidden">
-                            {/* <li>
-                <a href="/today">Option 1</a>
-              </li>
-              <li>
-                <a href="/today">Option 2</a>
-              </li> */}
-                        </ul>
                     </li>
                     <li>
-                        <Link to="/#best-bets">Best Bets</Link>
+                        <Link
+                            to="/#best-bets"
+                            className="hover:text-[#1D994A] hover:bg-[#1D994A]/10 duration-300 ease-in-out transition-colors"
+                        >
+                            Best Bets
+                        </Link>
                     </li>
-
-                    {/* Dropdown 2 */}
                     <li tabIndex={1}>
-                        <Link to="all-predictions">
+                        <Link
+                            to="all-predictions"
+                            className="hover:text-[#1D994A] hover:bg-[#1D994A]/10 duration-300 ease-in-out transition-colors"
+                        >
                             All Predictions
                             <IoMdArrowDropdown />
                         </Link>
-                        <ul className="p-2 hidden">
-                            {/* <li>
-                <a href="/predictions">Option 1</a>
-              </li>
-              <li>
-                <a href="/predictions">Option 2</a>
-              </li> */}
-                        </ul>
+                    </li>
+
+                    <li>
+                        <Link
+                            to="/game"
+                            className="hover:text-[#1D994A] hover:bg-[#1D994A]/10 duration-300 ease-in-out transition-colors"
+                        >
+                            Games
+                        </Link>
                     </li>
                 </ul>
             </div>
 
             {/* Hamburger for mobile */}
-            <div className="navbar-end lg:hidden">
+            <div className="navbar-end lg:hidden ">
                 <div className="dropdown dropdown-end">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
                         <svg
@@ -101,7 +102,7 @@ const Navbar = () => {
                     </label>
                     <ul
                         tabIndex={0}
-                        className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+                        className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 absolute z-50"
                     >
                         <li>
                             <Link to="/#predictions-for-you">
@@ -114,24 +115,21 @@ const Navbar = () => {
                         <li>
                             <Link to="/all-predictions">All Predictions</Link>
                         </li>
+                        <li>
+                            <Link to="/game/*">Games</Link>
+                        </li>
                     </ul>
                 </div>
             </div>
 
             {/* Browse Predictions Button */}
             <div className="navbar-end hidden lg:flex">
-                {/* <a
-          href="/browse"
-          className="btn bg-[#1D994A] text-[#f9f9f9] outline-none border-none"
-        >
-          Browse Predictions
-        </a> */}
                 <Link
-                    className="bg-[#1D994A] text-white radius-md p-3  h-12 rounded-sm text-[16px] font-inter hover:bg-[#1D994A]/90"
+                    className="bg-[#1D994A] text-white radius-md p-3 h-12 rounded-sm text-[16px] font-inter hover:bg-[#1D994A]/90"
                     to={"/all-predictions"}
                 >
                     Browse Predictions
-                </Link>{" "}
+                </Link>
             </div>
         </nav>
     );
